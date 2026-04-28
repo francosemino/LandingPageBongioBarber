@@ -49,10 +49,10 @@ export const Navbar = () => {
           onClick={() => setOpen(false)}
         >
           <span className="font-anton text-2xl md:text-[26px] tracking-[0.04em] text-chrome">
-            BONGIO
+            BONGIOBARBER
           </span>
           <span className="font-mono text-[10px] tracking-[0.3em] text-zinc-500 border border-zinc-700 px-2 py-[2px] rounded-full hidden sm:inline-block">
-            BARBER
+            BARBERIA
           </span>
         </a>
 
@@ -95,7 +95,7 @@ export const Navbar = () => {
 
       {/* Mobile drawer */}
       <div
-        className={`lg:hidden fixed inset-x-0 top-16 bottom-0 bg-black/95 backdrop-blur-2xl transition-all duration-300 ${
+        className={`lg:hidden fixed inset-x-0 top-16 bottom-0 bg-[#0a0a0a] border-t border-white/10 transition-all duration-300 ${
           open
             ? "opacity-100 translate-y-0 pointer-events-auto"
             : "opacity-0 -translate-y-4 pointer-events-none"
