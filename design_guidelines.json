@@ -1,0 +1,137 @@
+{
+  "project_name": "Bongio Barber",
+  "theme_and_archetype": {
+    "theme": "dark",
+    "archetype": "Hybrid: 4 (Swiss Brutalist) + 5 (Jewel & Luxury)",
+    "description": "Urban Dark Luxury. A street-smart, premium aesthetic blending the raw, high-contrast typography of streetwear brands (Off-White, Supreme) with the polished, moody precision of a high-end grooming lounge."
+  },
+  "typography": {
+    "fonts": {
+      "headings": "Anton, sans-serif",
+      "subheadings": "Oswald, sans-serif",
+      "body": "Manrope, sans-serif",
+      "mono": "JetBrains Mono, monospace"
+    },
+    "scale": {
+      "h1": "text-6xl md:text-[10vw] leading-[0.85] tracking-tighter uppercase",
+      "h2": "text-4xl md:text-6xl leading-none tracking-tight uppercase",
+      "h3": "text-2xl md:text-3xl tracking-tight uppercase",
+      "body": "text-base md:text-lg leading-relaxed text-zinc-400",
+      "labels": "text-xs tracking-[0.2em] uppercase font-mono text-zinc-500"
+    },
+    "import_links": [
+      "https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@300;400;500;600&family=Oswald:wght@400;500;700&family=JetBrains+Mono:wght@400;700&display=swap"
+    ]
+  },
+  "colors": {
+    "background": {
+      "main": "#050505",
+      "surface": "#121212",
+      "card": "#18181B"
+    },
+    "text": {
+      "primary": "#FFFFFF",
+      "secondary": "#A1A1AA",
+      "muted": "#71717A"
+    },
+    "brand": {
+      "chrome": "#E4E4E7",
+      "chrome_dark": "#71717A",
+      "subtle_blue": "#3B82F6",
+      "subtle_blue_glow": "rgba(59, 130, 246, 0.15)"
+    },
+    "borders": {
+      "subtle": "rgba(255, 255, 255, 0.08)",
+      "focus": "rgba(255, 255, 255, 0.2)"
+    }
+  },
+  "layout_and_spacing": {
+    "container": "max-w-[1400px] mx-auto px-6 md:px-12",
+    "section_padding": "py-24 md:py-32",
+    "border_radius": {
+      "cards": "rounded-2xl",
+      "buttons": "rounded-none md:rounded-lg",
+      "badges": "rounded-full"
+    },
+    "grid_systems": {
+      "services": "grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6",
+      "about_bento": "grid-cols-1 lg:grid-cols-12 gap-6",
+      "gallery": "grid-cols-2 md:grid-cols-4 gap-2 md:gap-4"
+    }
+  },
+  "components_strategy": {
+    "navbar": {
+      "style": "fixed top-0 w-full z-50 transition-all duration-300",
+      "background": "bg-black/60 backdrop-blur-xl border-b border-white/5",
+      "logo": "Use CSS text-shadow and linear-gradient to create a 'Chrome/Graffiti' effect for the text 'BONGIO'. (e.g. bg-gradient-to-b from-white to-zinc-500 bg-clip-text text-transparent). Ring it with a dark blue glow.",
+      "cta": "White background, black text, bold uppercase."
+    },
+    "hero": {
+      "layout": "min-h-[90vh] flex flex-col justify-center items-center text-center relative overflow-hidden",
+      "typography": "Massive BONGIO BARBER overlapping the background. Use Anton font. Subtitles in mono.",
+      "background": "Dark concrete texture mixed with a subtle radial blue glow in the center. Heavy vignette.",
+      "buttons": "3 buttons stacked or side-by-side. 1 Primary (Reservar Online), 2 Secondary (WhatsApp, Club Socios)."
+    },
+    "marquee": {
+      "style": "bg-zinc-900 border-y border-zinc-800 py-4 overflow-hidden flex",
+      "typography": "Oswald, text-2xl uppercase tracking-widest text-zinc-500",
+      "content": "• CADA CORTE TIENE INTENCIÓN • LÍNEAS LIMPIAS • DESVANECIDOS FINOS • TERMINACIONES PROLIJAS • BONGIO BARBER ES ACTITUD •"
+    },
+    "cards": {
+      "style": "bg-[#121212] border border-white/5 p-8 rounded-2xl hover:bg-[#18181b] transition-colors duration-300 hover:border-white/10 group relative overflow-hidden",
+      "interaction": "Subtle translate-y-[-4px] on hover. Inner glow effect on hover using subtle_blue_glow."
+    },
+    "buttons": {
+      "primary": "bg-white text-black font-bold uppercase tracking-wide px-8 py-4 hover:bg-zinc-200 transition-all",
+      "secondary": "bg-transparent border border-zinc-700 text-white font-bold uppercase tracking-wide px-8 py-4 hover:border-white transition-all",
+      "icon": "Lucide icons (ArrowRight, Calendar, MapPin)"
+    },
+    "gallery": {
+      "hover_effect": "Images start with grayscale(100%) and low brightness. On hover: grayscale(0%), brightness(100%), subtle scale(1.05)."
+    }
+  },
+  "media": {
+    "hero_bg": "https://images.unsplash.com/photo-1608093754564-5cd7922674fe?q=80&w=2000&auto=format&fit=crop",
+    "texture_overlay": "https://images.unsplash.com/photo-1712166040541-1ebe4ac6a7a1?q=80&w=1000&auto=format&fit=crop",
+    "services": [
+      {
+        "category": "Cortes & Fades",
+        "url": "https://images.pexels.com/photos/18503633/pexels-photo-18503633.jpeg?auto=compress&cs=tinysrgb&w=800"
+      },
+      {
+        "category": "Detalles & Herramientas",
+        "url": "https://images.pexels.com/photos/1570806/pexels-photo-1570806.jpeg?auto=compress&cs=tinysrgb&w=800"
+      },
+      {
+        "category": "Barba & Perfilado",
+        "url": "https://images.pexels.com/photos/6068310/pexels-photo-6068310.jpeg?auto=compress&cs=tinysrgb&w=800"
+      },
+      {
+        "category": "Resultados",
+        "url": "https://images.pexels.com/photos/12074386/pexels-photo-12074386.jpeg?auto=compress&cs=tinysrgb&w=800"
+      }
+    ],
+    "gallery_images": [
+      "https://images.pexels.com/photos/18503633/pexels-photo-18503633.jpeg",
+      "https://images.pexels.com/photos/12074386/pexels-photo-12074386.jpeg",
+      "https://images.pexels.com/photos/1570806/pexels-photo-1570806.jpeg",
+      "https://images.pexels.com/photos/6068310/pexels-photo-6068310.jpeg",
+      "https://images.unsplash.com/photo-1608093754564-5cd7922674fe",
+      "https://images.unsplash.com/photo-1712166040541-1ebe4ac6a7a1"
+    ]
+  },
+  "instructions_to_main_agent": [
+    "1. FRAMEWORK: Use React, Tailwind CSS, Framer Motion (for scroll animations/hover effects), and Lucide React (icons).",
+    "2. TYPOGRAPHY: Import Anton, Oswald, Manrope, and JetBrains Mono from Google Fonts in index.html or global css. Use Anton exclusively for massive headers (H1/Hero). Use Oswald for Section Titles. Use Manrope for Body.",
+    "3. HERO SECTION: Make it cinematic. The word 'BONGIO' should be massive (text-[12vw] or clamp) breaking the grid. Overlay the 'hero_bg' image with a heavy black/gradient scrim (bg-black/70 to bottom). Include the 3 requested buttons prominently.",
+    "4. MARQUEE: Implement a continuous scrolling marquee for the brand phrases to give it that streetwear/editorial feel. Use 'framer-motion' or basic CSS animations.",
+    "5. SERVICES: 9 Cards. Use the bento grid approach or a clean 3x3 grid. Cards must be dark (#121212) with 1px border. Hovering should reveal a subtle metallic or blue glow (box-shadow or inset border).",
+    "6. GALLERY: Create an Instagram-style masonry or tight grid. Apply the grayscale-to-color hover effect.",
+    "7. MEMBERS CLUB: Design a distinct 'VIP' looking section. Maybe use the 'texture_overlay' as a subtle background here. Highlight exclusivity.",
+    "8. LOGO: Since the real logo isn't provided as an image, build a CSS-only logo. Use 'font-anton text-transparent bg-clip-text bg-gradient-to-b from-white to-zinc-500' with a subtle text-shadow or a pseudo-element ring in dark blue.",
+    "9. DATA-TESTID: Ensure all buttons, links, and forms have appropriate data-testid attributes (e.g., data-testid='booking-hero-button').",
+    "10. ICONS: Use lucide-react for UI icons (Chevron, MapPin, Instagram, Phone).",
+    "11. SPACING: Be generous. Use py-24 or py-32 for section spacing to maintain a premium, uncrowded feel.",
+    "12. BRAND COPY: Strictly use the provided Spanish copy ('En Bahía Blanca... arranca Bongio Barber.'). Do not invent new Spanish copy."
+  ]
+}
