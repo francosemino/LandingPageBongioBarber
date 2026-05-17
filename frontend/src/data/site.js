@@ -36,51 +36,20 @@ export const waLink = (msg = INFO.mensajeWhatsApp) =>
 // Agregá / editá / quitá servicios.  icon = nombre de Lucide React.
 export const SERVICIOS = [
   {
-    nombre: "Corte masculino",
+    nombre: "Corte",
     descripcion:
       "Corte personalizado según tu estilo, tipo de pelo y forma de cara.",
     icon: "Scissors",
   },
   {
-    nombre: "Degradé / Fade",
-    descripcion: "Desvanecidos prolijos, limpios y con terminaciones finas.",
-    icon: "Waves",
-  },
-  {
-    nombre: "Corte con tijera",
-    descripcion: "Trabajo a tijera para texturas naturales y largos definidos.",
-    icon: "ScissorsLineDashed",
-  },
-  {
-    nombre: "Perfilado",
-    descripcion: "Líneas limpias en patillas, cuello y contornos.",
-    icon: "Ruler",
-  },
-  {
-    nombre: "Arreglo de barba",
-    descripcion:
-      "Perfilado, rebaje y terminación para mantener una barba prolija.",
-    icon: "User",
-  },
-  {
-    nombre: "Corte + Barba",
-    descripcion: "El combo completo: corte y barba en una sola visita.",
-    icon: "Sparkles",
-  },
-  {
-    nombre: "Diseño de cejas",
-    descripcion: "Detalle final para que el look quede 100% prolijo.",
-    icon: "Eye",
+    nombre: "Barba",
+    descripcion: "Perfilado, rebaje y diseño de barba con máquina y navaja.",
+    icon: "Scissors",
   },
   {
     nombre: "Lavado y peinado",
     descripcion: "Lavado, secado y peinado con productos profesionales.",
-    icon: "Droplets",
-  },
-  {
-    nombre: "Productos de cuidado",
-    descripcion: "Pomadas, ceras y aceites para sostener el corte en casa.",
-    icon: "Package",
+    icon: "ScissorsLineDashed",
   },
 ];
 
@@ -203,40 +172,22 @@ export const GALERIA_CATEGORIAS = [
 // ------------------------------ CLUB DE SOCIOS -------------------------------
 export const BENEFICIOS = [
   {
-    titulo: "Beneficios exclusivos",
+    titulo: "Corte 50% OFF + 1 birra gratis en Las Tias",
     descripcion:
-      "Descuentos y propuestas pensadas solo para socios del club Bongio.",
-    icon: "BadgePercent",
-  },
-  {
-    titulo: "Promociones especiales",
-    descripcion:
-      "Combos, días con precio diferencial y promos por temporada.",
-    icon: "Tag",
-  },
-  {
-    titulo: "Recompensas por fidelidad",
-    descripcion:
-      "Acumulás visitas y desbloqueás cortes, barbas y productos sin cargo.",
+      "Acumulando 5 visitas",
     icon: "Gift",
   },
   {
-    titulo: "Novedades primero",
+    titulo: "Corte gratis",
     descripcion:
-      "Te avisamos antes que a nadie de servicios nuevos, productos y eventos.",
-    icon: "Bell",
+      "Acumulando 10 visitas",
+    icon: "Gift",
   },
   {
-    titulo: "Acceso a propuestas",
+    titulo: " CENA PARA 3/4 PERSONAS EN BRONX SOCIAL CLUB",
     descripcion:
-      "Workshops, sesiones especiales y experiencias para clientes frecuentes.",
-    icon: "Sparkles",
-  },
-  {
-    titulo: "Comunidad Bongio",
-    descripcion:
-      "Sumate al grupo de gente que elige criterio, prolijidad y estándar alto.",
-    icon: "Users",
+      "Acumulando 20 visitas.",
+    icon: "Gift",
   },
 ];
 

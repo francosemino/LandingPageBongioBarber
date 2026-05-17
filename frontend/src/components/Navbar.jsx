@@ -6,7 +6,6 @@ const NAV_ITEMS = [
   { label: "Inicio", href: "#inicio" },
   { label: "Servicios", href: "#servicios" },
   { label: "Barberos", href: "#barberos" },
-  { label: "Galería", href: "#galeria" },
   { label: "Socios", href: "#socios" },
   { label: "Ubicación", href: "#ubicacion" },
   { label: "Contacto", href: "#contacto" },

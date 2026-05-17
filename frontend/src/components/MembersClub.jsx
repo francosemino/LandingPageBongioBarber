@@ -1,4 +1,4 @@
-import Icons from "lucide-react";
+import * as  Icons from "lucide-react";
 import { Crown, Calendar, ArrowUpRight } from "lucide-react";
 import { BENEFICIOS, INFO } from "../data/site";
 import Reveal from "./Reveal";

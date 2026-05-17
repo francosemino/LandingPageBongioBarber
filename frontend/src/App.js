@@ -23,7 +23,6 @@ const HomePage = () => (
       <About />
       <Services />
       <Team />
-      <Gallery />
       <MembersClub />
       <Location />
       <Contact />
