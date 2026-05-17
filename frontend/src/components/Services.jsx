@@ -8,7 +8,7 @@ export const Services = () => {
     <section
       id="servicios"
       data-testid="services"
-      className="relative bg-bongio-surface py-24 md:py-32 overflow-hidden"
+      className="relative bg-bongio-surface py-14 md:py-32 overflow-hidden"
     >
       {/* Side label */}
       <div className="hidden xl:block absolute left-6 top-32 vertical-tb font-mono text-[10px] tracking-[0.4em] uppercase text-zinc-600">
@@ -16,14 +16,14 @@ export const Services = () => {
       </div>
 
       <div className="max-w-[1400px] mx-auto px-5 md:px-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-14 md:mb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 md:gap-8 mb-10 md:mb-16">
           <div className="lg:col-span-3">
             <p className="font-mono text-[11px] tracking-[0.3em] uppercase text-zinc-500">
               / Servicios
             </p>
           </div>
           <Reveal className="lg:col-span-9">
-            <h2 className="font-anton uppercase text-5xl md:text-7xl lg:text-8xl leading-[0.85] tracking-tight">
+            <h2 className="font-anton uppercase text-4xl md:text-7xl lg:text-8xl leading-[0.85] tracking-tight">
               <span className="text-chrome-soft">Lo que hacemos.</span>
               <br />
               <span className="text-zinc-600">Lo hacemos bien.</span>
@@ -42,7 +42,7 @@ export const Services = () => {
                   className="group relative h-full bg-bongio-card metal-border p-7 md:p-8 hover:border-white/15 hover:bg-[#161618] transition-all duration-300"
                 >
                   <div className="flex items-start justify-between mb-6">
-                    <div className="w-12 h-12 flex items-center justify-center border border-white/10 group-hover:border-bongio-blue group-hover:text-bongio-blue text-zinc-300 transition">
+                    <div className="w-12 h-12 flex items-center justify-center border border-white/10 group-hover:border-bongio-gold group-hover:text-bongio-gold text-zinc-300 transition">
                       <Icon className="w-5 h-5" strokeWidth={1.6} />
                     </div>
                     <span className="font-mono text-[10px] tracking-[0.25em] text-zinc-600">

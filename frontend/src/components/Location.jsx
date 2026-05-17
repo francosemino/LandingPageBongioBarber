@@ -11,17 +11,17 @@ export const Location = () => {
     <section
       id="ubicacion"
       data-testid="location"
-      className="relative bg-bongio-bg py-24 md:py-32"
+      className="relative bg-bongio-bg py-14 md:py-32"
     >
       <div className="max-w-[1400px] mx-auto px-5 md:px-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-12 md:mb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 md:gap-8 mb-8 md:mb-16">
           <div className="lg:col-span-3">
             <p className="font-mono text-[11px] tracking-[0.3em] uppercase text-zinc-500">
               / Ubicación
             </p>
           </div>
           <Reveal className="lg:col-span-9">
-            <h2 className="font-anton uppercase text-5xl md:text-7xl leading-[0.85] tracking-tight text-chrome-soft">
+            <h2 className="font-anton uppercase text-4xl md:text-7xl leading-[0.85] tracking-tight text-chrome-soft">
               Vení a <span className="text-white">Vieytes 189.</span>
             </h2>
           </Reveal>

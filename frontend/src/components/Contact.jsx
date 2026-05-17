@@ -7,21 +7,21 @@ export const Contact = () => {
     <section
       id="contacto"
       data-testid="contact"
-      className="relative bg-bongio-surface py-24 md:py-32"
+      className="relative bg-bongio-surface py-14 md:py-32"
     >
       <div className="max-w-[1400px] mx-auto px-5 md:px-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-12 md:mb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 md:gap-8 mb-8 md:mb-16">
           <div className="lg:col-span-3">
             <p className="font-mono text-[11px] tracking-[0.3em] uppercase text-zinc-500">
               / Contacto
             </p>
           </div>
           <Reveal className="lg:col-span-9">
-            <h2 className="font-anton uppercase text-5xl md:text-7xl leading-[0.85] tracking-tight">
+            <h2 className="font-anton uppercase text-4xl md:text-7xl leading-[0.85] tracking-tight">
               <span className="text-chrome-soft">Hablemos.</span>{" "}
               <span className="text-zinc-600">Reservá.</span>
             </h2>
-            <p className="mt-5 max-w-xl text-zinc-400">
+            <p className="mt-4 md:mt-5 max-w-xl text-zinc-400 text-sm md:text-base">
               ¿Querés consultar por un turno o un servicio? Estamos a un mensaje
               de distancia.
             </p>
@@ -73,7 +73,7 @@ export const Contact = () => {
             className="group flex items-center gap-4 bg-bongio-card metal-border p-5 hover:border-white/15 transition"
             data-testid="contact-address-link"
           >
-            <MapPin className="w-5 h-5 text-bongio-blue shrink-0" />
+            <MapPin className="w-5 h-5 text-bongio-gold shrink-0" />
             <div className="min-w-0">
               <p className="font-mono text-[10px] tracking-[0.3em] uppercase text-zinc-500">
                 Dirección
@@ -88,7 +88,7 @@ export const Contact = () => {
             className="group flex items-center gap-4 bg-bongio-card metal-border p-5 hover:border-white/15 transition"
             data-testid="contact-phone-link"
           >
-            <Phone className="w-5 h-5 text-bongio-blue shrink-0" />
+            <Phone className="w-5 h-5 text-bongio-gold shrink-0" />
             <div className="min-w-0">
               <p className="font-mono text-[10px] tracking-[0.3em] uppercase text-zinc-500">
                 Llamar

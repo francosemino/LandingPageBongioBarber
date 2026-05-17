@@ -5,17 +5,17 @@ export const Footer = () => {
   return (
     <footer
       data-testid="footer"
-      className="relative bg-black border-t border-white/5 pt-16 pb-8"
+      className="relative bg-black border-t border-white/5 pt-10 md:pt-16 pb-8"
     >
       <div className="max-w-[1400px] mx-auto px-5 md:px-10">
         {/* Massive wordmark */}
-        <div className="border-b border-white/5 pb-12 mb-12">
-          <p className="font-mono text-[11px] tracking-[0.3em] uppercase text-zinc-600 mb-3">
+        <div className="border-b border-white/5 pb-8 md:pb-12 mb-8 md:mb-12">
+          <p className="font-mono text-[11px] tracking-[0.3em] uppercase text-zinc-600 mb-2 md:mb-3">
             / Bahía Blanca · Vieytes 189
           </p>
           <h3
             className="font-anton uppercase leading-[0.82] tracking-tighter text-chrome-soft"
-            style={{ fontSize: "clamp(3rem, 12vw, 11rem)" }}
+            style={{ fontSize: "clamp(2.25rem, 12vw, 11rem)" }}
           >
             BONGIO BARBER
           </h3>

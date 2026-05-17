@@ -6,7 +6,7 @@ export const Hero = () => {
     <section
       id="inicio"
       data-testid="hero"
-      className="relative min-h-[100svh] flex flex-col justify-end overflow-hidden bg-bongio-bg grain"
+      className="relative min-h-[85svh] md:min-h-[100svh] flex flex-col justify-end overflow-hidden bg-bongio-bg grain"
     >
       {/* Background image */}
       <div className="absolute inset-0">
@@ -18,7 +18,7 @@ export const Hero = () => {
         />
         {/* Scrim */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(59,130,246,0.10),transparent_55%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(212,160,90,0.12),transparent_55%)]" />
       </div>
 
       {/* Top meta strip */}
@@ -35,24 +35,24 @@ export const Hero = () => {
       </div>
 
       {/* Main wordmark */}
-      <div className="relative z-10 max-w-[1400px] mx-auto w-full px-5 md:px-10 mt-auto pb-10 md:pb-16">
-        <p className="font-mono text-[11px] tracking-[0.3em] uppercase text-zinc-500 mb-3 md:mb-4">
-          / Barbería en Bahía Blanca / Est. 2024
+      <div className="relative z-10 max-w-[1400px] mx-auto w-full px-5 md:px-10 mt-auto pb-8 md:pb-16">
+        <p className="font-mono text-[10px] md:text-[11px] tracking-[0.3em] uppercase text-zinc-500 mb-2 md:mb-4">
+          / Barbería en Bahía Blanca / Est. 2026
         </p>
 
         <h1
           className="font-anton uppercase leading-[0.82] tracking-tighter text-chrome"
-          style={{ fontSize: "clamp(3.5rem, 14vw, 14rem)" }}
+          style={{ fontSize: "clamp(3rem, 14vw, 14rem)" }}
         >
           Bongio
           <br />
           <span className="inline-flex items-baseline gap-3 md:gap-6">
             Barber
-            <span className="hidden md:inline-block w-3 h-3 lg:w-4 lg:h-4 bg-bongio-blue rounded-full translate-y-[-0.6em]" />
+            <span className="hidden md:inline-block w-3 h-3 lg:w-4 lg:h-4 bg-bongio-gold rounded-full translate-y-[-0.6em]" />
           </span>
         </h1>
 
-        <div className="mt-8 md:mt-10 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-end">
+        <div className="mt-6 md:mt-10 grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 items-end">
           <p className="lg:col-span-6 text-zinc-300 text-base md:text-lg max-w-xl leading-relaxed">
             <span className="text-white font-medium">
               {INFO.frasePrincipal}
@@ -90,7 +90,7 @@ export const Hero = () => {
               target="_blank"
               rel="noopener noreferrer"
               data-testid="hero-socios-btn"
-              className="inline-flex items-center justify-center gap-3 bg-transparent border border-zinc-600 text-white font-oswald uppercase tracking-[0.18em] text-sm px-7 py-4 hover:border-bongio-blue hover:text-bongio-blue transition-all"
+              className="inline-flex items-center justify-center gap-3 bg-transparent border border-zinc-600 text-white font-oswald uppercase tracking-[0.18em] text-sm px-7 py-4 hover:border-bongio-gold hover:text-bongio-gold transition-all"
             >
               <Crown className="w-4 h-4" />
               Club de socios

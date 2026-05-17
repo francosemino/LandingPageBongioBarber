@@ -55,7 +55,7 @@ module.exports = {
                     card: "#121214",
                     chrome: "#E4E4E7",
                     metal: "#71717A",
-                    blue: "#3B82F6",
+                    gold: "#D4A05A",
                 },
             },
             keyframes: {
