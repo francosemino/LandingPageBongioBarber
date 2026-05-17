@@ -27,34 +27,13 @@ export const About = () => {
 
         {/* Bento layout: image + 4 blocks */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 md:gap-6">
-          {/* Image card */}
-          <Reveal className="lg:col-span-5 lg:row-span-2">
-            <div className="relative h-[420px] lg:h-full min-h-[480px] overflow-hidden metal-border bg-bongio-card">
-              <img
-                src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=1400&auto=format&fit=crop"
-                alt="Barbero trabajando"
-                className="w-full h-full object-cover grayscale"
-                loading="lazy"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent" />
-              <div className="absolute bottom-6 left-6 right-6">
-                <p className="font-mono text-[10px] tracking-[0.3em] uppercase text-zinc-400">
-                  / Estudio
-                </p>
-                <p className="font-anton text-2xl md:text-3xl uppercase mt-1 text-white">
-                  Vieytes 189 · Bahía Blanca
-                </p>
-              </div>
-              <div className="absolute top-5 right-5 w-3 h-3 rounded-full bg-bongio-gold shadow-[0_0_24px_rgba(59,130,246,0.7)]" />
-            </div>
-          </Reveal>
 
           {/* Text blocks */}
           {ABOUT_BLOCKS.map((b, i) => (
             <Reveal
               key={i}
               delay={i * 80}
-              className={i % 2 === 0 ? "lg:col-span-4" : "lg:col-span-3"}
+              className={i % 2 === 0 ? "lg:col-span-3" : "lg:col-span-3"}
             >
               <div className="h-full bg-bongio-card metal-border p-7 md:p-8 hover:border-white/15 transition group">
                 <p className="font-mono text-[10px] tracking-[0.3em] uppercase text-zinc-500">
