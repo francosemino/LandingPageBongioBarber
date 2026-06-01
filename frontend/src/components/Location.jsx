@@ -30,7 +30,7 @@ export const Location = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 md:gap-6">
           {/* Map */}
           <Reveal className="lg:col-span-7">
-            <div className="relative h-[340px] md:h-[460px] overflow-hidden metal-border bg-bongio-card">
+            <div className="relative h-[340px] md:h-[460px] overflow-hidden metal-border rounded-[18px] overflow-hidden bg-bongio-card">
               <iframe
                 title="Bongio Barber Mapa"
                 src={mapsEmbed}
@@ -44,7 +44,7 @@ export const Location = () => {
 
           {/* Info */}
           <Reveal className="lg:col-span-5">
-            <div className="h-full bg-bongio-card metal-border p-7 md:p-10 flex flex-col">
+            <div className="h-full bg-bongio-card metal-border rounded-[18px] overflow-hidden p-7 md:p-10 flex flex-col">
               <div className="space-y-6">
                 <InfoRow
                   icon={<MapPin className="w-4 h-4" />}
@@ -74,7 +74,7 @@ export const Location = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   data-testid="location-como-llegar-btn"
-                  className="flex-1 inline-flex items-center justify-center gap-2 bg-white text-black font-oswald uppercase tracking-[0.18em] text-[12px] px-5 py-3.5 hover:bg-zinc-200 transition"
+                  className="flex-1 inline-flex items-center justify-center gap-2 bg-white rounded-[18px] overflow-hidden text-black font-oswald uppercase tracking-[0.18em] text-[12px] px-5 py-3.5 hover:bg-zinc-200 transition"
                 >
                   <Navigation className="w-4 h-4" />
                   Cómo llegar
@@ -84,7 +84,7 @@ export const Location = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   data-testid="location-reservar-btn"
-                  className="flex-1 inline-flex items-center justify-center gap-2 border border-white/15 text-white font-oswald uppercase tracking-[0.18em] text-[12px] px-5 py-3.5 hover:border-white hover:bg-white/5 transition"
+                  className="flex-1 inline-flex items-center justify-center gap-2 border border-white/15 rounded-[18px] overflow-hidden text-white font-oswald uppercase tracking-[0.18em] text-[12px] px-5 py-3.5 hover:border-white hover:bg-white/5 transition"
                 >
                   <Calendar className="w-4 h-4" />
                   Reservar
@@ -100,7 +100,7 @@ export const Location = () => {
 
 const InfoRow = ({ icon, label, value }) => (
   <div className="flex items-start gap-4">
-    <div className="w-10 h-10 inline-flex items-center justify-center border border-white/10 text-zinc-300 shrink-0">
+    <div className="w-10 h-10 inline-flex items-center justify-center border border-white/10 rounded-xl text-zinc-300 shrink-0">
       {icon}
     </div>
     <div className="min-w-0">

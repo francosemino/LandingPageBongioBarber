@@ -60,7 +60,10 @@ export const Footer = () => {
                   className="hover:text-white inline-flex items-center gap-2"
                   data-testid="footer-reservar"
                 >
-                  <Calendar className="w-3.5 h-3.5" /> Turno online
+                  <span className="w-7 h-7 inline-flex items-center justify-center border border-white/10 rounded-lg text-zinc-300">
+                    <Calendar className="w-3.5 h-3.5" />
+                  </span>
+                  Turno online
                 </a>
               </li>
               <li>
@@ -71,7 +74,10 @@ export const Footer = () => {
                   className="hover:text-white inline-flex items-center gap-2"
                   data-testid="footer-whatsapp"
                 >
-                  <MessageCircle className="w-3.5 h-3.5" /> WhatsApp
+                  <span className="w-7 h-7 inline-flex items-center justify-center border border-white/10 rounded-lg text-zinc-300">
+                    <MessageCircle className="w-3.5 h-3.5" />
+                  </span>
+                  WhatsApp
                 </a>
               </li>
               <li>
@@ -82,7 +88,10 @@ export const Footer = () => {
                   className="hover:text-white inline-flex items-center gap-2"
                   data-testid="footer-socios"
                 >
-                  <Crown className="w-3.5 h-3.5" /> Club de socios
+                  <span className="w-7 h-7 inline-flex items-center justify-center border border-white/10 rounded-lg text-zinc-300">
+                    <Crown className="w-3.5 h-3.5" />
+                  </span>
+                  Club de socios
                 </a>
               </li>
             </ul>
@@ -97,9 +106,11 @@ export const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               data-testid="footer-instagram"
-              className="inline-flex items-center gap-2 text-zinc-300 hover:text-white border border-white/10 px-4 py-2.5"
+              className="group inline-flex items-center gap-2 text-zinc-300 hover:text-white border border-white/10 hover:border-bongio-gold/50 rounded-xl px-4 py-2.5 transition"
             >
-              <Instagram className="w-4 h-4" />
+              <span className="w-7 h-7 inline-flex items-center justify-center border border-white/10 rounded-lg text-zinc-300 group-hover:text-bongio-gold group-hover:border-bongio-gold/50 transition">
+                <Instagram className="w-4 h-4" />
+              </span>
               {INFO.instagramUser}
             </a>
             <p className="mt-4 text-zinc-500 text-sm">{INFO.telefonoMostrar}</p>

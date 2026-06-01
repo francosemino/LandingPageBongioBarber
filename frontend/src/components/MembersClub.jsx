@@ -31,7 +31,7 @@ export const MembersClub = () => {
             </p>
           </div>
           <Reveal className="lg:col-span-9">
-            <div className="inline-flex items-center gap-2 border border-bongio-gold/40 px-3 py-1.5 mb-4 md:mb-5">
+            <div className="inline-flex items-center gap-2 rounded-full border border-bongio-gold/40 px-3 py-1.5 mb-4 md:mb-5">
               <Crown className="w-3.5 h-3.5 text-bongio-gold" />
               <span className="font-mono text-[10px] tracking-[0.3em] uppercase text-bongio-gold">
                 Acceso premium
@@ -58,10 +58,10 @@ export const MembersClub = () => {
               <Reveal key={i} delay={i * 70}>
                 <div
                   data-testid={`benefit-card-${i}`}
-                  className="group relative h-full min-h-[180px] md:min-h-[220px] bg-gradient-to-b from-[#0e0e10] to-[#08080a] border border-white/10 p-6 md:p-7 hover:border-bongio-gold/40 transition-all duration-300 flex flex-col"
+                  className="group relative h-full min-h-[180px] md:min-h-[220px] rounded-2xl overflow-hidden bg-gradient-to-b from-[#0e0e10] to-[#08080a] border border-white/10 p-6 md:p-7 hover:border-bongio-gold/40 transition-all duration-300 flex flex-col"
                 >
-                  <div className="flex items-start justify-between mb-5">
-                    <div className="w-12 h-12 inline-flex items-center justify-center bg-bongio-gold/10 border border-bongio-gold/30 text-bongio-gold">
+                  <div className="flex items-start rounded-sm justify-between mb-5">
+                    <div className="w-12 h-12 rounded-xl inline-flex items-center justify-center bg-bongio-gold/10 border border-bongio-gold/30 text-bongio-gold">
                       <Icon className="w-5 h-5" strokeWidth={1.6} />
                     </div>
                     <span className="font-mono text-[10px] tracking-[0.3em] text-zinc-600">
@@ -78,7 +78,7 @@ export const MembersClub = () => {
                       </p>
                     </>
                   ) : (
-                    <div className="mt-auto pt-6 border-t border-dashed border-white/10">
+                    <div className="mt-auto pt-6 rounded-sm border-t border-dashed border-white/10">
                       <p className="font-mono text-[10px] tracking-[0.25em] uppercase text-zinc-600">
                         Beneficio {String(i + 1).padStart(2, "0")}
                       </p>
@@ -95,7 +95,7 @@ export const MembersClub = () => {
 
         {/* CTA */}
         <Reveal>
-          <div className="mt-10 md:mt-20 relative bg-gradient-to-br from-bongio-gold/15 to-transparent border border-white/10 p-6 md:p-12 text-center md:text-left flex flex-col md:flex-row md:items-center md:justify-between gap-5 md:gap-6">
+          <div className="mt-10 md:mt-20 rounded-2xl overflow-hidden relative bg-gradient-to-br from-bongio-gold/15 to-transparent border border-white/10 p-6 md:p-12 text-center md:text-left flex flex-col md:flex-row md:items-center md:justify-between gap-5 md:gap-6">
             <div>
               <p className="font-mono text-[11px] tracking-[0.3em] uppercase text-bongio-gold mb-2">
                 / Empezá ahora
@@ -113,7 +113,7 @@ export const MembersClub = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 data-testid="club-entrar-btn"
-                className="inline-flex items-center justify-center gap-2 bg-white text-black font-oswald uppercase tracking-[0.18em] text-sm px-6 md:px-7 py-3.5 md:py-4 hover:bg-zinc-200 transition"
+                className="inline-flex items-center rounded-xl justify-center gap-2 bg-white text-black font-oswald uppercase tracking-[0.18em] text-sm px-6 md:px-7 py-3.5 md:py-4 hover:bg-zinc-200 transition"
               >
                 <Crown className="w-4 h-4" />
                 Entrar al club
@@ -124,7 +124,7 @@ export const MembersClub = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 data-testid="club-reservar-btn"
-                className="inline-flex items-center justify-center gap-2 border border-white/20 text-white font-oswald uppercase tracking-[0.18em] text-sm px-6 md:px-7 py-3.5 md:py-4 hover:border-white hover:bg-white/5 transition"
+                className="inline-flex items-center rounded-xl justify-center gap-2 border border-white/20 text-white font-oswald uppercase tracking-[0.18em] text-sm px-6 md:px-7 py-3.5 md:py-4 hover:border-white hover:bg-white/5 transition"
               >
                 <Calendar className="w-4 h-4" />
                 Reservar turno

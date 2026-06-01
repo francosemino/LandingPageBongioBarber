@@ -49,7 +49,7 @@ export const SERVICIOS = [
   {
     nombre: "Lavado y peinado",
     descripcion: "Lavado, secado y peinado con productos profesionales.",
-    icon: "ScissorsLineDashed",
+    icon: "Scissors",
   },
 ];
 
@@ -57,28 +57,28 @@ export const SERVICIOS = [
 // Agregá, editá o quitá barberos. Reemplazá `foto` con la URL real cuando esté.
 export const BARBEROS = [
   {
-    nombre: "Barbero 01",
-    especialidad: "Fade · Diseños · Líneas",
+    nombre: "Julian",
+    especialidad: "Texturas · Tijeras · Perfilado",
     bio: "Especialista en desvanecidos finos y diseños con máquina. Mano firme y obsesión por la simetría.",
     foto: "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=900&auto=format&fit=crop",
-    instagram: "https://instagram.com/bongiobarber",
+    instagram: "https://www.instagram.com/juliansantiago011?igsh=MXJtaTlleXgxM3NmMA==",
+    horarios: "Lun a Sáb · 14:00 — 21:00",
+  },
+  {
+    nombre: "Tiago",
+    especialidad: "Texturas · Tijeras · Perfilado",
+    bio: "Cortes a tijera con caída natural y texturas prolijas. Estilo entre clásico y moderno.",
+    foto: "https://images.unsplash.com/photo-1622286342621-4bd786c2447c?q=80&w=900&auto=format&fit=crop",
+    instagram: "https://www.instagram.com/_tiago_barber?igsh=MXRvZWNuZWo4MzNqaQ==",
     horarios: "Lun a Sáb · 10:00 — 21:00",
   },
   {
-    nombre: "Barbero 02",
-    especialidad: "Tijera · Texturas · Clásico",
-    bio: "Cortes a tijera con caída natural y texturas prolijas. Estilo entre clásico y moderno.",
-    foto: "https://images.unsplash.com/photo-1622286342621-4bd786c2447c?q=80&w=900&auto=format&fit=crop",
-    instagram: "https://instagram.com/bongiobarber",
-    horarios: "Mar a Sáb · 11:00 — 21:00",
-  },
-  {
-    nombre: "Barbero 03",
-    especialidad: "Barba · Perfilado · Detalle",
+    nombre: "Giselle",
+    especialidad: "Corte · Perfilado · Color",
     bio: "Especialidad en barba: rebaje, perfilado y terminaciones a navaja. Detalle obsesivo.",
     foto: "https://images.unsplash.com/photo-1599351431202-1e0f0137899a?q=80&w=900&auto=format&fit=crop",
     instagram: "https://instagram.com/bongiobarber",
-    horarios: "Lun a Vie · 10:00 — 20:00",
+    horarios: "Lun a Sáb · 10:00 — 14:00",
   },
 ];
 

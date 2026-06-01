@@ -76,7 +76,7 @@ export const Navbar = () => {
             target="_blank"
             rel="noopener noreferrer"
             data-testid="navbar-reservar-btn"
-            className="hidden sm:inline-flex items-center gap-2 bg-white text-black font-oswald uppercase tracking-[0.18em] text-[12px] px-5 py-2.5 hover:bg-zinc-200 transition-all"
+            className="hidden sm:inline-flex items-center rounded-sm gap-2 bg-white text-black font-oswald uppercase tracking-[0.18em] text-[12px] px-5 py-2.5 hover:bg-zinc-200 transition-all"
           >
             <Calendar className="w-4 h-4" />
             Reservar turno
@@ -122,7 +122,7 @@ export const Navbar = () => {
             rel="noopener noreferrer"
             onClick={() => setOpen(false)}
             data-testid="navbar-mobile-reservar-btn"
-            className="mt-6 inline-flex items-center justify-center gap-2 bg-white text-black font-oswald uppercase tracking-[0.2em] text-sm px-6 py-4"
+            className="mt-6 inline-flex items-center rounded-sm justify-center gap-2 bg-white text-black font-oswald uppercase tracking-[0.2em] text-sm px-6 py-4"
           >
             <Calendar className="w-4 h-4" />
             Reservar turno

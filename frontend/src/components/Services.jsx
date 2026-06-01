@@ -39,12 +39,13 @@ export const Services = () => {
               <Reveal key={s.nombre} delay={i * 60}>
                 <article
                   data-testid={`service-card-${i}`}
-                  className="group relative h-full bg-bongio-card metal-border p-7 md:p-8 hover:border-white/15 hover:bg-[#161618] transition-all duration-300"
+                  className="group relative h-full bg-bongio-card metal-border rounded-[18px] overflow-hidden p-7 md:p-8 hover:border-white/15 hover:bg-[#161618] transition-all duration-300"
                 >
                   <div className="flex items-start justify-between mb-6">
-                    <div className="w-12 h-12 flex items-center justify-center border border-white/10 group-hover:border-bongio-gold group-hover:text-bongio-gold text-zinc-300 transition">
+                    <div className="w-12 h-12 flex items-center justify-center border border-white/10 rounded-xl bg-black/20 group-hover:border-bongio-gold group-hover:text-bongio-gold text-zinc-300 transition">
                       <Icon className="w-5 h-5" strokeWidth={1.6} />
                     </div>
+
                     <span className="font-mono text-[10px] tracking-[0.25em] text-zinc-600">
                       {num}
                     </span>
@@ -69,7 +70,7 @@ export const Services = () => {
                   </a>
 
                   {/* hover glow */}
-                  <div className="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-[radial-gradient(600px_circle_at_top_right,rgba(59,130,246,0.10),transparent_60%)]" />
+                  <div className="pointer-events-none absolute inset-0 rounded-[18px] opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-[radial-gradient(600px_circle_at_top_right,rgba(212,157,72,0.14),transparent_60%)]" />
                 </article>
               </Reveal>
             );

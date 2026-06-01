@@ -40,11 +40,10 @@ export const Contact = () => {
           <ContactCard
             icon={<Calendar className="w-5 h-5" />}
             label="Reservas"
-            value="barberoscontrol.com"
+            value="Reservar turno"
             cta="Reservar online"
             href={INFO.reservaUrl}
             testId="contact-reservar"
-            primary
           />
           <ContactCard
             icon={<Instagram className="w-5 h-5" />}
@@ -70,7 +69,7 @@ export const Contact = () => {
             href={INFO.mapsUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="group flex items-center gap-4 bg-bongio-card metal-border p-5 hover:border-white/15 transition"
+            className="group flex items-center gap-4 bg-bongio-card metal-border rounded-[18px] p-5 hover:border-white/15 transition"
             data-testid="contact-address-link"
           >
             <MapPin className="w-5 h-5 text-bongio-gold shrink-0" />
@@ -85,7 +84,7 @@ export const Contact = () => {
           </a>
           <a
             href={`tel:${INFO.telefonoMostrar.replace(/\s|-/g, "")}`}
-            className="group flex items-center gap-4 bg-bongio-card metal-border p-5 hover:border-white/15 transition"
+            className="group flex items-center gap-4 bg-bongio-card metal-border rounded-[18px] p-5 hover:border-white/15 transition"
             data-testid="contact-phone-link"
           >
             <Phone className="w-5 h-5 text-bongio-gold shrink-0" />
@@ -110,7 +109,7 @@ const ContactCard = ({ icon, label, value, cta, href, primary, testId }) => (
     target="_blank"
     rel="noopener noreferrer"
     data-testid={testId}
-    className={`group relative flex flex-col justify-between p-7 metal-border h-full transition ${
+    className={`group relative flex flex-col justify-between p-7 metal-border rounded-[18px] overflow-hidden h-full transition ${
       primary
         ? "bg-white text-black hover:bg-zinc-200"
         : "bg-bongio-card text-white hover:border-white/15"
@@ -118,7 +117,7 @@ const ContactCard = ({ icon, label, value, cta, href, primary, testId }) => (
   >
     <div className="flex items-start justify-between">
       <div
-        className={`w-11 h-11 inline-flex items-center justify-center border ${
+        className={`w-11 h-11 inline-flex items-center justify-center border rounded-xl ${
           primary ? "border-black/20" : "border-white/10 text-zinc-300"
         }`}
       >
@@ -148,6 +147,10 @@ const ContactCard = ({ icon, label, value, cta, href, primary, testId }) => (
         {cta} →
       </p>
     </div>
+
+    {!primary && (
+      <div className="pointer-events-none absolute inset-0 rounded-[18px] opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-[radial-gradient(600px_circle_at_top_right,rgba(212,157,72,0.14),transparent_60%)]" />
+    )}
   </a>
 );
 

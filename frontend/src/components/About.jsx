@@ -35,7 +35,7 @@ export const About = () => {
               delay={i * 80}
               className={i % 2 === 0 ? "lg:col-span-3" : "lg:col-span-3"}
             >
-              <div className="h-full bg-bongio-card metal-border p-7 md:p-8 hover:border-white/15 transition group">
+              <div className="h-full bg-bongio-card metal-border rounded-[18px] overflow-hidden p-7 md:p-8 hover:border-white/15 transition group">
                 <p className="font-mono text-[10px] tracking-[0.3em] uppercase text-zinc-500">
                   {b.label}
                 </p>
@@ -55,7 +55,7 @@ export const About = () => {
         <div className="mt-10 md:mt-20 grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-6">
           {PULL_QUOTES.map((q, i) => (
             <Reveal key={i} delay={i * 80}>
-              <blockquote className="relative bg-gradient-to-b from-bongio-card to-black metal-border p-7 h-full">
+              <blockquote className="relative bg-gradient-to-b from-bongio-card rounded-[18px] overflow-hidden to-black metal-border p-7 h-full">
                 <span className="font-anton text-6xl text-bongio-gold/40 leading-none absolute top-4 left-5">
                   “
                 </span>

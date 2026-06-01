@@ -67,7 +67,7 @@ export const Hero = () => {
               target="_blank"
               rel="noopener noreferrer"
               data-testid="hero-reservar-online-btn"
-              className="group inline-flex items-center justify-center gap-3 bg-white text-black font-oswald uppercase tracking-[0.18em] text-sm px-7 py-4 hover:bg-zinc-200 transition-all"
+              className="group inline-flex items-center justify-center gap-3 bg-white text-black font-oswald uppercase tracking-[0.18em] text-sm px-7 py-4 rounded-xl hover:bg-zinc-200 transition-all"
             >
               <Calendar className="w-4 h-4" />
               Reservar online
@@ -80,7 +80,7 @@ export const Hero = () => {
               target="_blank"
               rel="noopener noreferrer"
               data-testid="hero-whatsapp-btn"
-              className="inline-flex items-center justify-center gap-3 bg-transparent border border-zinc-600 text-white font-oswald uppercase tracking-[0.18em] text-sm px-7 py-4 hover:border-white hover:bg-white/5 transition-all"
+              className="inline-flex items-center justify-center gap-3 bg-transparent border border-zinc-600 text-white font-oswald uppercase tracking-[0.18em] text-sm px-7 py-4 rounded-xl hover:border-bongio-gold hover:text-bongio-gold hover:bg-white/5 transition-all"
             >
               <MessageCircle className="w-4 h-4" />
               WhatsApp
@@ -90,7 +90,7 @@ export const Hero = () => {
               target="_blank"
               rel="noopener noreferrer"
               data-testid="hero-socios-btn"
-              className="inline-flex items-center justify-center gap-3 bg-transparent border border-zinc-600 text-white font-oswald uppercase tracking-[0.18em] text-sm px-7 py-4 hover:border-bongio-gold hover:text-bongio-gold transition-all"
+              className="inline-flex items-center justify-center gap-3 bg-transparent border border-zinc-600 text-white font-oswald uppercase tracking-[0.18em] text-sm px-7 py-4 rounded-xl hover:border-bongio-gold hover:text-bongio-gold transition-all"
             >
               <Crown className="w-4 h-4" />
               Club de socios
@@ -103,7 +103,9 @@ export const Hero = () => {
       <div className="relative z-10 border-t border-white/5 bg-black/50 backdrop-blur-md">
         <div className="max-w-[1400px] mx-auto px-5 md:px-10 py-4 grid grid-cols-2 md:grid-cols-4 gap-4 text-xs md:text-sm">
           <div className="flex items-start gap-2 text-zinc-300">
-            <Clock className="w-4 h-4 mt-0.5 text-zinc-500 shrink-0" />
+            <span className="w-9 h-9 inline-flex items-center justify-center rounded-xl border border-white/10 bg-black/30 text-bongio-gold shrink-0">
+              <Clock className="w-4 h-4" />
+            </span>
             <div>
               <p className="font-mono text-[10px] tracking-[0.2em] text-zinc-500 uppercase">
                 Horarios
@@ -112,7 +114,9 @@ export const Hero = () => {
             </div>
           </div>
           <div className="flex items-start gap-2 text-zinc-300">
-            <MapPin className="w-4 h-4 mt-0.5 text-zinc-500 shrink-0" />
+            <span className="w-9 h-9 inline-flex items-center justify-center rounded-xl border border-white/10 bg-black/30 text-bongio-gold shrink-0">
+              <MapPin className="w-4 h-4" />
+            </span>
             <div>
               <p className="font-mono text-[10px] tracking-[0.2em] text-zinc-500 uppercase">
                 Dirección
@@ -121,7 +125,9 @@ export const Hero = () => {
             </div>
           </div>
           <div className="flex items-start gap-2 text-zinc-300">
-            <Calendar className="w-4 h-4 mt-0.5 text-zinc-500 shrink-0" />
+            <span className="w-9 h-9 inline-flex items-center justify-center rounded-xl border border-white/10 bg-black/30 text-bongio-gold shrink-0">
+              <Calendar className="w-4 h-4" />
+            </span>
             <div>
               <p className="font-mono text-[10px] tracking-[0.2em] text-zinc-500 uppercase">
                 Modalidad
@@ -135,7 +141,9 @@ export const Hero = () => {
             rel="noopener noreferrer"
             className="flex items-start gap-2 text-zinc-300 hover:text-white transition"
           >
-            <Instagram className="w-4 h-4 mt-0.5 text-zinc-500 shrink-0" />
+            <span className="w-9 h-9 inline-flex items-center justify-center rounded-xl border border-white/10 bg-black/30 text-bongio-gold shrink-0">
+              <Instagram className="w-4 h-4" />
+            </span>
             <div>
               <p className="font-mono text-[10px] tracking-[0.2em] text-zinc-500 uppercase">
                 Instagram

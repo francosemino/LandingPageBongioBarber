@@ -26,7 +26,7 @@ export const Marquee = () => {
             <span className="font-anton uppercase text-2xl md:text-4xl tracking-wider text-zinc-200 whitespace-nowrap">
               {p}
             </span>
-            <Star className="w-4 h-4 md:w-5 md:h-5 text-bongio-blue shrink-0" />
+            <Star className="w-4 h-4 md:w-5 md:h-5 text-bongio-gold shrink-0" />
           </div>
         ))}
       </div>

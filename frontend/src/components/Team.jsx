@@ -34,8 +34,7 @@ export const Team = () => {
             <Reveal key={b.nombre} delay={i * 100}>
               <article
                 data-testid={`barber-card-${i}`}
-                className="group relative h-full bg-bongio-card metal-border overflow-hidden hover:border-white/15 transition"
-              >
+                className="group relative h-full bg-bongio-card metal-border rounded-[18px] overflow-hidden hover:border-white/15 transition"              >
                 {/* Photo */}
                 <div className="relative aspect-[4/5] overflow-hidden">
                   <img
@@ -45,7 +44,7 @@ export const Team = () => {
                     className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent" />
-                  <span className="absolute top-4 left-4 font-mono text-[10px] tracking-[0.3em] uppercase text-zinc-300 bg-black/60 px-3 py-1.5 border border-white/10">
+                  <span className="absolute top-4 left-4 font-mono text-[10px] tracking-[0.3em] uppercase text-zinc-300 bg-black/60 px-3 py-1.5 border border-white/10 rounded-xl">
                     0{i + 1} · Barbero
                   </span>
                 </div>
@@ -74,7 +73,7 @@ export const Team = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       data-testid={`barber-reservar-${i}`}
-                      className="flex-1 inline-flex items-center justify-center gap-2 bg-white text-black font-oswald uppercase tracking-[0.18em] text-[12px] px-4 py-3 hover:bg-zinc-200 transition"
+                      className="flex-1 inline-flex items-center justify-center gap-2 bg-white text-black font-oswald uppercase tracking-[0.18em] text-[12px] px-4 py-3 rounded-xl hover:bg-zinc-200 transition"
                     >
                       <Calendar className="w-3.5 h-3.5" />
                       Reservar
@@ -86,7 +85,7 @@ export const Team = () => {
                         rel="noopener noreferrer"
                         aria-label={`Instagram ${b.nombre}`}
                         data-testid={`barber-instagram-${i}`}
-                        className="w-11 h-11 inline-flex items-center justify-center border border-white/10 text-zinc-300 hover:text-white hover:border-white/30 transition"
+                        className="w-11 h-11 inline-flex items-center justify-center border border-white/10 text-zinc-300 rounded-xl hover:text-white hover:border-white/30 transition"
                       >
                         <Instagram className="w-4 h-4" />
                       </a>
