@@ -4,7 +4,6 @@ import { INFO } from "../data/site";
 
 const NAV_ITEMS = [
   { label: "Inicio", href: "#inicio" },
-  { label: "Servicios", href: "#servicios" },
   { label: "Barberos", href: "#barberos" },
   { label: "Socios", href: "#socios" },
   { label: "Ubicación", href: "#ubicacion" },
