@@ -23,24 +23,32 @@ export const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
+    if (!open) return;
+
+    const originalBodyOverflow = document.body.style.overflow;
+    const originalHtmlOverflow = document.documentElement.style.overflow;
+
+    document.body.style.overflow = "hidden";
+    document.documentElement.style.overflow = "hidden";
+
+    return () => {
+      document.body.style.overflow = originalBodyOverflow;
+      document.documentElement.style.overflow = originalHtmlOverflow;
+    };
+  }, [open]);
+
+  useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 16);
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  // lock body scroll when mobile menu open
-  useEffect(() => {
-    document.body.style.overflow = open ? "hidden" : "";
-    return () => {
-      document.body.style.overflow = "";
-    };
-  }, [open]);
 
   return (
     <header
       data-testid="navbar"
-      className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
+      className={`fixed inset-x-0 top-0 ${open ? "z-[99999]" : "z-50"} transition-all duration-300 ${
         scrolled
           ? "bg-black/75 backdrop-blur-xl border-b border-white/5"
           : "bg-transparent"
@@ -101,18 +109,18 @@ export const Navbar = () => {
 
       {/* Mobile drawer */}
       <div
-        className={`lg:hidden fixed inset-0 z-[999] bg-black text-white transition-all duration-300 ${
+        className={`lg:hidden fixed inset-0 z-[99999] isolate bg-[#050505] text-white transition-all duration-300 ${
           open
             ? "opacity-100 translate-y-0 pointer-events-auto"
             : "opacity-0 -translate-y-4 pointer-events-none"
         }`}
         data-testid="navbar-mobile-menu"
       >
-        {/* Fondo premium */}
-        <div className="absolute inset-0 bg-[radial-gradient(700px_circle_at_top_right,rgba(212,157,72,0.18),transparent_55%)]" />
-        <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(255,255,255,0.04),transparent_35%,rgba(0,0,0,0.95))]" />
+        <div className="absolute inset-0 -z-20 bg-[#050505]" />
+        <div className="absolute inset-0 -z-10 bg-[radial-gradient(700px_circle_at_top_right,rgba(212,157,72,0.18),transparent_55%)]" />
+        <div className="absolute inset-0 -z-10 bg-[linear-gradient(to_bottom,rgba(255,255,255,0.04),transparent_35%,rgba(0,0,0,0.95))]" />
 
-        <div className="relative min-h-dvh px-5 pt-6 pb-8 flex flex-col overflow-y-auto">
+        <div className="relative z-10 h-dvh overflow-y-auto overscroll-contain px-5 pt-6 pb-8 flex flex-col">
           {/* Header mobile */}
           <div className="flex items-center justify-between border-b border-white/10 pb-5">
             <a
