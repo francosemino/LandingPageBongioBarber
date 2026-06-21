@@ -26,9 +26,6 @@ export const MembersClub = () => {
       <div className="relative max-w-[1400px] mx-auto px-5 md:px-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 md:gap-8 mb-10 md:mb-16">
           <div className="lg:col-span-3">
-            <p className="font-mono text-[11px] tracking-[0.3em] uppercase text-bongio-gold">
-              / Club Bongio
-            </p>
           </div>
           <Reveal className="lg:col-span-9">
             <div className="inline-flex items-center gap-2 rounded-full border border-bongio-gold/40 px-3 py-1.5 mb-4 md:mb-5">
