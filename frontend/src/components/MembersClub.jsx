@@ -47,12 +47,16 @@ export const MembersClub = () => {
         </div>
 
         {/* Benefits grid — empty placeholder cards (editá BENEFICIOS en /src/data/site.js) */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-3 md:gap-4">
           {BENEFICIOS.map((b, i) => {
             const Icon = Icons[b.icon] || Icons.Star;
             const hasContent = b.titulo || b.descripcion;
             return (
-              <Reveal key={i} delay={i * 70}>
+              <Reveal
+                key={i}
+                delay={i * 70}
+                className={i < 3 ? "lg:col-span-2" : "lg:col-span-3"}
+              >
                 <div
                   data-testid={`benefit-card-${i}`}
                   className="group relative h-full min-h-[180px] md:min-h-[220px] rounded-2xl overflow-hidden bg-gradient-to-b from-[#0e0e10] to-[#08080a] border border-white/10 p-6 md:p-7 hover:border-bongio-gold/40 transition-all duration-300 flex flex-col"
