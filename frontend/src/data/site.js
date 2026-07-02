@@ -76,8 +76,8 @@ export const BARBEROS = [
     nombre: "Giselle",
     especialidad: "Corte · Perfilado · Color",
     bio: "Especialidad en barba: rebaje, perfilado y terminaciones a navaja. Detalle obsesivo.",
-    foto: "https://images.unsplash.com/photo-1599351431202-1e0f0137899a?q=80&w=900&auto=format&fit=crop",
-    instagram: "https://instagram.com/bongiobarber",
+    foto: "/images/barberos/giselle.jpg",
+    instagram: "https://www.instagram.com/medussa.s.look/",
     horarios: "Lun a Sáb · 10:00 — 14:00",
   },
 ];
