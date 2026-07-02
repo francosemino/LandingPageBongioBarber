@@ -12,9 +12,6 @@ export const Team = () => {
       <div className="max-w-[1400px] mx-auto px-5 md:px-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 md:gap-8 mb-10 md:mb-16">
           <div className="lg:col-span-3">
-            <p className="font-mono text-[11px] tracking-[0.3em] uppercase text-zinc-500">
-              / Equipo
-            </p>
           </div>
           <Reveal className="lg:col-span-9">
             <h2 className="font-anton uppercase text-4xl md:text-7xl lg:text-8xl leading-[0.85] tracking-tight text-chrome-soft">

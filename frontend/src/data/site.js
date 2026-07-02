@@ -86,21 +86,33 @@ export const BARBEROS = [
 // ------------------------------ CLUB DE SOCIOS -------------------------------
 export const BENEFICIOS = [
   {
-    titulo: "Corte 50% OFF + 1 birra gratis en Las Tias",
+    titulo: "Bienvenido a la comunidad Bongio",
     descripcion:
-      "Acumulando 5 visitas",
+      "1 Cerveza Free Las Tías",
     icon: "Gift",
   },
   {
-    titulo: "Corte gratis",
+    titulo: "De la casa",
     descripcion:
-      "Acumulando 10 visitas",
+      "Perfilado de barba o lavado de regalo + 1 Cerveza free Las tías",
     icon: "Gift",
   },
   {
-    titulo: " CENA PARA 3/4 PERSONAS EN BRONX SOCIAL CLUB",
+    titulo: "Comunidad Bongio",
     descripcion:
-      "Acumulando 20 visitas.",
+      "Kit/merch BongioBarber (gorra, producto)",
+    icon: "Gift",
+  },
+  {
+    titulo: "Mesa Bongio",
+    descripcion:
+      "Cena para 4 personas en Bronx Social Club. Pizza y papas sin cargo.",
+    icon: "Gift",
+  },
+  {
+    titulo: "Cliente Élite Bongio",
+    descripcion:
+      "Socio Embajador: Regalo exclusivo y tu lugar en la pared.",
     icon: "Gift",
   },
 ];
